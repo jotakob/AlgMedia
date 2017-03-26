@@ -1,6 +1,8 @@
 "use strict";
 var Field = {}
 var viscosity = 0.001
+var gridSize = 32
+var sim;
 
 function preload()
 {
@@ -9,39 +11,32 @@ function preload()
 
 function setup()
 {
-    Field.u = new Array(256*256)
-    Field.v = new Array(256*256)
-    Field.u0 = new Array(256*258)
-    Field.v0 = new Array(256*258)
-    Field.addForce = new function(x, y, force) {
-
-    }
-
-    for (var i = 0; i < Field.u.length; i++) {
-        Field.u[i] = 0
-        Field.v[i] = 0
-        Field.u0[i] = 0
-        Field.v0[i] = 0
-    }
     frameRate(30)
-    createCanvas(256, 256)
+    createCanvas(gridSize*10, gridSize*10)
+    sim = new Simulator(ui)
 }
 
 function draw()
 {
     clear()
-    Field.u0[256*128] = 10
-    solve(256, Field.u, Field.v, Field.u0, Field.v0, viscosity, 1000/30)
+    background("#fae")
+
     if (mouseIsPressed) {
 
     }
 
-    var n = Field.u.length
+    sim.step()
+
     for (var i = 0; i < n; i++) {
         var force = sqrt(pow(Field.u[i], 2) + pow(Field.v[i], 2))
-        var s = 255 * 1-(force/10)
+        if (force != 0)
+        {
+            console.log("force=" + force)
+        }
+        var s = 255 * (1-(force/10))
         stroke(s)
-        point(i%256, floor(i/256))
+        fill(s)
+        rect(i%gridSize * 10, floor(i/gridSize) * 10, 10, 10)
     }
 }
 
@@ -62,8 +57,8 @@ function solve ( n, u, v, u0, v0, visc, dt)
 {
     var x, y, x0, y0, f, r, s, t
     var i, j, i0, j0, i1, j1;
-    var U = new Array(2)
-    var V = new Array(2)
+    var U = new Int32Array(2)
+    var V = new Int32Array(2)
 
     for ( i=0 ; i<n*n ; i++ ) {
         u[i] += dt*u0[i]
@@ -92,8 +87,8 @@ function solve ( n, u, v, u0, v0, visc, dt)
         }
     }
 
-    FFT(u0,zeroArray(256*258)); //FFT_r2c
-    FFT(v0,zeroArray(256*258));
+    fft.forward(u0); //FFT_r2c
+    fft.forward(v0);
 
     for ( i=0 ; i<=n ; i+=2 ) {
         x = 0.5*i;
@@ -114,8 +109,8 @@ function solve ( n, u, v, u0, v0, visc, dt)
         }
     }
 
-    iFFT(u0,zeroArray(256*258)); //FFT_c2r
-    iFFT(v0,zeroArray(256*258));
+    fft.inverse(u0); //FFT_c2r
+    fft.inverse(v0);
 
     f = 1.0/(n*n);
     for ( i=0 ; i<n ; i++ ) {
@@ -348,12 +343,3 @@ function convolveComplex(xreal, ximag, yreal, yimag, outreal, outimag) {
 }
 
 /* End Nayuki FFT */
-
-function zeroArray(size)
-{
-    var ret = new Array(size)
-    for (var i = 0; i < ret.length; i++) {
-        ret[i] = 0
-    }
-    return ret
-}
