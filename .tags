@@ -1,0 +1,712 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+html	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^<html>$/;"	function	line:1
+head	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^<head>$/;"	function	line:2
+meta	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^  <meta charset="UTF-8">$/;"	function	line:3
+script	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^  <script language="javascript" type="text\/javascript" src="libraries\/p5.js"><\/script>$/;"	function	line:4
+script	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^  <script language="javascript" type="text\/javascript" src="sketch.js"><\/script>$/;"	function	line:8
+style	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^  <style> body {padding: 0; margin: 0;} <\/style>$/;"	function	line:10
+body	E:\Users\Jakob\Game Development\Git\AlgMedia\index.html	/^<body>$/;"	function	line:13
+define	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    define('p5.dom', ['p5'], function (p5) { (factory(p5));});$/;"	function	line:30
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:55
+select	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.select = function (e, p) {$/;"	function	line:71
+select	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.select = function (e, p) {$/;"	method	line:71
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:114
+selectAll	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.selectAll = function (e, p) {$/;"	function	line:137
+p5	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.selectAll = function (e, p) {$/;"	class	line:137
+p5.selectAll	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.selectAll = function (e, p) {$/;"	method	line:137
+getContainer	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function getContainer(p) {$/;"	function	line:159
+getContainer	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function getContainer(p) {$/;"	function	line:159
+wrapElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function wrapElement(elt) {$/;"	function	line:175
+checked	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      converted.checked = function(){$/;"	function	line:178
+converted.checked	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      converted.checked = function(){$/;"	function	line:178
+wrapElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function wrapElement(elt) {$/;"	function	line:175
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:203
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function mousePressed() {$/;"	function	line:208
+removeElements	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.removeElements = function (e) {$/;"	function	line:214
+p5.removeElements	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.removeElements = function (e) {$/;"	method	line:214
+addElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function addElement(elt, pInst, media) {$/;"	function	line:225
+addElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function addElement(elt, pInst, media) {$/;"	function	line:225
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:244
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:262
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:279
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:308
+createImg	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createImg = function() {$/;"	function	line:313
+p5.createImg	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createImg = function() {$/;"	method	line:313
+setAttrs	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    var setAttrs = function(){$/;"	function	line:317
+p5.var.setAttrs	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    var setAttrs = function(){$/;"	function	line:317
+onload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    elt.onload = function(){$/;"	function	line:332
+elt.onload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    elt.onload = function(){$/;"	function	line:332
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:353
+createA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createA = function(href, html, target) {$/;"	function	line:358
+p5.createA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createA = function(href, html, target) {$/;"	method	line:358
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:384
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:390
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:398
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:405
+createSlider	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createSlider = function(min, max, value, step) {$/;"	function	line:411
+p5.createSlider	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createSlider = function(min, max, value, step) {$/;"	method	line:411
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:439
+changeBG	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function changeBG() {$/;"	function	line:447
+createButton	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createButton = function(label, value) {$/;"	function	line:453
+p5.createButton	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createButton = function(label, value) {$/;"	method	line:453
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:473
+myCheckedEvent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function myCheckedEvent() {$/;"	function	line:478
+createCheckbox	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createCheckbox = function() {$/;"	function	line:487
+p5.createCheckbox	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createCheckbox = function() {$/;"	method	line:487
+checked	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.checked = function(){$/;"	function	line:494
+self.checked	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.checked = function(){$/;"	function	line:494
+value	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    this.value = function(val){$/;"	function	line:507
+this.value	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    this.value = function(val){$/;"	method	line:507
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:535
+mySelectEvent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function mySelectEvent() {$/;"	function	line:546
+createSelect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createSelect = function(mult) {$/;"	function	line:553
+p5.createSelect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createSelect = function(mult) {$/;"	method	line:553
+option	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.option = function(name, value){$/;"	function	line:559
+self.option	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.option = function(name, value){$/;"	function	line:559
+selected	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.selected = function(value){$/;"	function	line:568
+self.selected	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.selected = function(value){$/;"	function	line:568
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:603
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:613
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:622
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:631
+createRadio	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createRadio = function() {$/;"	function	line:640
+p5.createRadio	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createRadio = function() {$/;"	method	line:640
+option	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.option = function(name, value){$/;"	function	line:662
+selected	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.selected = function(){$/;"	function	line:683
+value	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.value = function(){$/;"	function	line:698
+self.value	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.value = function(){$/;"	function	line:698
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup(){$/;"	function	line:729
+myInputEvent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function myInputEvent(){$/;"	function	line:734
+createInput	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createInput = function(value, type) {$/;"	function	line:740
+p5.createInput	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createInput = function(value, type) {$/;"	method	line:740
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:759
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:764
+handleFile	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function handleFile(file) {$/;"	function	line:770
+createFileInput	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createFileInput = function(callback, multiple) {$/;"	function	line:778
+p5.createFileInput	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createFileInput = function(callback, multiple) {$/;"	method	line:778
+handleFileSelect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      function handleFileSelect(evt) {$/;"	function	line:796
+makeLoader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^          function makeLoader(theFile) {$/;"	function	line:803
+function.function.makeLoader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^          function makeLoader(theFile) {$/;"	function	line:803
+function.handleFileSelect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      function handleFileSelect(evt) {$/;"	function	line:796
+createMedia	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function createMedia(pInst, type, src, callback) {$/;"	function	line:834
+callbackHandler	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      var callbackHandler = function() {$/;"	function	line:848
+var.callbackHandler	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      var callbackHandler = function() {$/;"	function	line:848
+createMedia	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  function createMedia(pInst, type, src, callback) {$/;"	function	line:834
+createVideo	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createVideo = function(src, callback) {$/;"	function	line:891
+p5.createVideo	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createVideo = function(src, callback) {$/;"	method	line:891
+createAudio	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createAudio = function(src, callback) {$/;"	function	line:918
+p5.createAudio	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createAudio = function(src, callback) {$/;"	method	line:918
+p5.VIDEO	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.VIDEO = 'video';$/;"	method	line:925
+p5.AUDIO	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.AUDIO = 'audio';$/;"	method	line:926
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:957
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:962
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:968
+createCapture	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createCapture = function() {$/;"	function	line:988
+p5.createCapture	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createCapture = function() {$/;"	method	line:988
+constraints.video	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^        constraints = {video: useVideo, audio: useAudio};$/;"	property	line:1009
+constraints.audio	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^        constraints = {video: useVideo, audio: useAudio};$/;"	property	line:1009
+createElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createElement = function(tag, content) {$/;"	function	line:1052
+p5.createElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.prototype.createElement = function(tag, content) {$/;"	method	line:1052
+addClass	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.addClass = function(c) {$/;"	function	line:1078
+p5.Element	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.addClass = function(c) {$/;"	class	line:1078
+p5.Element.addClass	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.addClass = function(c) {$/;"	method	line:1078
+removeClass	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.removeClass = function(c) {$/;"	function	line:1099
+p5.Element.removeClass	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.removeClass = function(c) {$/;"	method	line:1099
+child	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.child = function(c) {$/;"	function	line:1134
+p5.Element.child	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.child = function(c) {$/;"	method	line:1134
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:1160
+center	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.center = function(align) {$/;"	function	line:1168
+p5.Element.center	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.center = function(align) {$/;"	method	line:1168
+p5.Element.var.pos.x	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    var pos = { x : this.elt.offsetLeft, y : this.elt.offsetTop };$/;"	property	line:1172
+html	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.html = function() {$/;"	function	line:1226
+p5.Element.html	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.html = function() {$/;"	method	line:1226
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:1251
+position	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.position = function() {$/;"	function	line:1259
+p5.Element.position	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.position = function() {$/;"	method	line:1259
+_translate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype._translate = function(){$/;"	function	line:1273
+p5.Element._translate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype._translate = function(){$/;"	method	line:1273
+_rotate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype._rotate = function(){$/;"	function	line:1297
+p5.Element._rotate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype._rotate = function(){$/;"	method	line:1297
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:1355
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function draw() {$/;"	function	line:1361
+style	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.style = function(prop, val) {$/;"	function	line:1366
+p5.Element.style	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.style = function(prop, val) {$/;"	method	line:1366
+attribute	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.attribute = function(attr, value) {$/;"	function	line:1421
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:1444
+enableButton	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function enableButton() {$/;"	function	line:1451
+removeAttribute	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.removeAttribute = function(attr) {$/;"	function	line:1462
+p5.Element.removeAttribute	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.removeAttribute = function(attr) {$/;"	method	line:1462
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:1479
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function mousePressed() {$/;"	function	line:1483
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function setup() {$/;"	function	line:1490
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   * function mousePressed() {$/;"	function	line:1494
+value	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.value = function() {$/;"	function	line:1499
+p5.Element.value	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.value = function() {$/;"	method	line:1499
+show	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.show = function() {$/;"	function	line:1524
+p5.Element.show	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.show = function() {$/;"	method	line:1524
+hide	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.hide = function() {$/;"	function	line:1540
+p5.Element.hide	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.hide = function() {$/;"	method	line:1540
+size	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.size = function(w, h) {$/;"	function	line:1561
+p5.Element.size	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.size = function(w, h) {$/;"	method	line:1561
+remove	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.remove = function() {$/;"	function	line:1620
+p5.Element.remove	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.Element.prototype.remove = function() {$/;"	method	line:1620
+MediaElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement = function(elt, pInst) {$/;"	function	line:1649
+get	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      get: function() {$/;"	function	line:1667
+set	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      set: function(newValue) {$/;"	function	line:1673
+_onended	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self._onended = function() {};$/;"	function	line:1685
+self	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self._onended = function() {};$/;"	method	line:1685
+onended	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.elt.onended = function() {$/;"	function	line:1686
+self	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^    self.elt.onended = function() {$/;"	method	line:1686
+p5.MediaElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement = function(elt, pInst) {$/;"	class	line:1649
+play	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.play = function() {$/;"	function	line:1701
+p5.MediaElement.play	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.play = function() {$/;"	method	line:1701
+stop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.stop = function() {$/;"	function	line:1722
+p5.MediaElement.stop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.stop = function() {$/;"	method	line:1722
+pause	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.pause = function() {$/;"	function	line:1734
+p5.MediaElement.pause	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.pause = function() {$/;"	method	line:1734
+loop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.loop = function() {$/;"	function	line:1745
+p5.MediaElement.loop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.loop = function() {$/;"	method	line:1745
+noLoop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.noLoop = function() {$/;"	function	line:1757
+p5.MediaElement.noLoop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.noLoop = function() {$/;"	method	line:1757
+autoplay	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.autoplay = function(val) {$/;"	function	line:1770
+p5.MediaElement.autoplay	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.autoplay = function(val) {$/;"	method	line:1770
+volume	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.volume = function(val) {$/;"	function	line:1783
+p5.MediaElement.volume	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.volume = function(val) {$/;"	method	line:1783
+speed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.speed = function(val) {$/;"	function	line:1802
+p5.MediaElement.speed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.speed = function(val) {$/;"	method	line:1802
+time	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.time = function(val) {$/;"	function	line:1819
+p5.MediaElement.time	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.time = function(val) {$/;"	method	line:1819
+duration	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.duration = function() {$/;"	function	line:1833
+p5.MediaElement.duration	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.duration = function() {$/;"	method	line:1833
+p5.MediaElement.pixels	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.pixels = [];$/;"	method	line:1836
+loadPixels	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.loadPixels = function() {$/;"	function	line:1837
+p5.MediaElement.loadPixels	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.loadPixels = function() {$/;"	method	line:1837
+p5.MediaElement.p5	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      p5.Renderer2D.prototype.loadPixels.call(this);$/;"	class	line:1850
+updatePixels	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.updatePixels =  function(x, y, w, h){$/;"	function	line:1854
+p5.MediaElement.updatePixels	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.updatePixels =  function(x, y, w, h){$/;"	method	line:1854
+p5.MediaElement.p5.Renderer2D	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      p5.Renderer2D.prototype.updatePixels.call(this, x, y, w, h);$/;"	class	line:1856
+get	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.get = function(x, y, w, h){$/;"	function	line:1860
+p5.MediaElement.get	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.get = function(x, y, w, h){$/;"	method	line:1860
+p5.MediaElement.return.Renderer2D	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^      return p5.Renderer2D.prototype.get.call(this, x, y, w, h);$/;"	class	line:1862
+set	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.set = function(x, y, imgOrCol){$/;"	function	line:1871
+p5.MediaElement.set	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.set = function(x, y, imgOrCol){$/;"	method	line:1871
+copy	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.copy = function(){$/;"	function	line:1876
+p5.MediaElement.copy	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.copy = function(){$/;"	method	line:1876
+mask	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.mask = function(){$/;"	function	line:1879
+p5.MediaElement.mask	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.mask = function(){$/;"	method	line:1879
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   *  function setup() {$/;"	function	line:1898
+sayDone	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   *  function sayDone(elt) {$/;"	function	line:1904
+onended	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.onended = function(callback) {$/;"	function	line:1909
+p5.MediaElement.onended	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.onended = function(callback) {$/;"	method	line:1909
+connect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.connect = function(obj) {$/;"	function	line:1929
+p5.MediaElement.connect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.connect = function(obj) {$/;"	method	line:1929
+disconnect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.disconnect = function() {$/;"	function	line:1976
+showControls	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.showControls = function() {$/;"	function	line:1992
+p5.MediaElement.showControls	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.showControls = function() {$/;"	method	line:1992
+hideControls	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.hideControls = function() {$/;"	function	line:2003
+p5.MediaElement.hideControls	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.hideControls = function() {$/;"	method	line:2003
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   *  function setup() {$/;"	function	line:2038
+changeBackground	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^   *  function changeBackground(val) {$/;"	function	line:2053
+addCue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.addCue = function(time, callback, val) {$/;"	function	line:2058
+p5.MediaElement.addCue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.addCue = function(time, callback, val) {$/;"	method	line:2058
+removeCue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.removeCue = function(id) {$/;"	function	line:2078
+p5.MediaElement.removeCue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.removeCue = function(id) {$/;"	method	line:2078
+clearCues	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype.clearCues = function() {$/;"	function	line:2097
+_onTimeUpdate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype._onTimeUpdate = function() {$/;"	function	line:2104
+p5.MediaElement._onTimeUpdate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.MediaElement.prototype._onTimeUpdate = function() {$/;"	method	line:2104
+Cue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  var Cue = function(callback, time, id, val) {$/;"	function	line:2126
+var.Cue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  var Cue = function(callback, time, id, val) {$/;"	class	line:2126
+File	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.File = function(file, pInst) {$/;"	function	line:2147
+p5.File	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.dom.js	/^  p5.File = function(file, pInst) {$/;"	class	line:2147
+e	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.p5 = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){$/;"	function	line:2
+argument	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.argument = function(predicate, message) {$/;"	function	line:11
+line	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function line(ctx, x1, y1, x2, y2) {$/;"	function	line:27
+DefaultEncoding	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function DefaultEncoding(font) {$/;"	function	line:163
+charToGlyphIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^DefaultEncoding.prototype.charToGlyphIndex = function(c) {$/;"	function	line:167
+CmapEncoding	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function CmapEncoding(cmap) {$/;"	function	line:184
+charToGlyphIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^CmapEncoding.prototype.charToGlyphIndex = function(c) {$/;"	function	line:188
+CffEncoding	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function CffEncoding(encoding, charset) {$/;"	function	line:192
+charToGlyphIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^CffEncoding.prototype.charToGlyphIndex = function(s) {$/;"	function	line:197
+GlyphNames	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function GlyphNames(post) {$/;"	function	line:203
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    switch (post.version) {$/;"	function	line:205
+nameToGlyphIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^GlyphNames.prototype.nameToGlyphIndex = function(name) {$/;"	function	line:233
+glyphIndexToName	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^GlyphNames.prototype.glyphIndexToName = function(gid) {$/;"	function	line:237
+addGlyphNames	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function addGlyphNames(font) {$/;"	function	line:241
+Font	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function Font(options) {$/;"	function	line:286
+hasChar	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.hasChar = function(c) {$/;"	function	line:312
+charToGlyphIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.charToGlyphIndex = function(s) {$/;"	function	line:319
+charToGlyph	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.charToGlyph = function(c) {$/;"	function	line:326
+stringToGlyphs	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.stringToGlyphs = function(s) {$/;"	function	line:341
+nameToGlyphIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.nameToGlyphIndex = function(name) {$/;"	function	line:351
+nameToGlyph	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.nameToGlyph = function(name) {$/;"	function	line:355
+glyphIndexToName	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.glyphIndexToName = function(gid) {$/;"	function	line:366
+getKerningValue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.getKerningValue = function(leftGlyph, rightGlyph) {$/;"	function	line:378
+forEachGlyph	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.forEachGlyph = function(text, x, y, fontSize, options, callback) {$/;"	function	line:388
+getPath	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.getPath = function(text, x, y, fontSize, options) {$/;"	function	line:424
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.draw = function(ctx, text, x, y, fontSize, options) {$/;"	function	line:443
+drawPoints	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.drawPoints = function(ctx, text, x, y, fontSize, options) {$/;"	function	line:457
+drawMetrics	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.drawMetrics = function(ctx, text, x, y, fontSize, options) {$/;"	function	line:475
+validate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.validate = function() {$/;"	function	line:482
+assert	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function assert(predicate, message) {$/;"	function	line:486
+assertStringAttribute	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function assertStringAttribute(attrName) {$/;"	function	line:492
+toTables	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.toTables = function() {$/;"	function	line:509
+toBuffer	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.toBuffer = function() {$/;"	function	line:513
+download	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Font.prototype.download = function() {$/;"	function	line:526
+getPathDefinition	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getPathDefinition(glyph, path) {$/;"	function	line:562
+get	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        get: function() {$/;"	function	line:567
+set	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        set: function(p) {$/;"	function	line:575
+Glyph	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function Glyph(options) {$/;"	function	line:586
+bindConstructorValues	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.bindConstructorValues = function(options) {$/;"	function	line:592
+addUnicode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.addUnicode = function(unicode) {$/;"	function	line:628
+getPath	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.getPath = function(x, y, fontSize) {$/;"	function	line:641
+getContours	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.getContours = function() {$/;"	function	line:672
+getMetrics	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.getMetrics = function() {$/;"	function	line:693
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.draw = function(ctx, x, y, fontSize) {$/;"	function	line:732
+drawPoints	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.drawPoints = function(ctx, x, y, fontSize) {$/;"	function	line:743
+drawCircles	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function drawCircles(l, x, y, scale) {$/;"	function	line:745
+drawMetrics	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Glyph.prototype.drawMetrics = function(ctx, x, y, fontSize) {$/;"	function	line:795
+GlyphSet	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function GlyphSet(font, glyphs) {$/;"	function	line:840
+get	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^GlyphSet.prototype.get = function(index) {$/;"	function	line:852
+push	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^GlyphSet.prototype.push = function(index, loader) {$/;"	function	line:860
+glyphLoader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function glyphLoader(font, index) {$/;"	function	line:865
+ttfGlyphLoader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function ttfGlyphLoader(font, index, parseGlyph, data, position, buildPath) {$/;"	function	line:875
+path	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        glyph.path = function() {$/;"	function	line:879
+cffGlyphLoader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function cffGlyphLoader(font, index, parseCFFCharstring, charstring) {$/;"	function	line:890
+path	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        glyph.path = function() {$/;"	function	line:894
+toArrayBuffer	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function toArrayBuffer(buffer) {$/;"	function	line:942
+loadFromFile	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function loadFromFile(path, callback) {$/;"	function	line:952
+loadFromUrl	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function loadFromUrl(url, callback) {$/;"	function	line:963
+onload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    request.onload = function() {$/;"	function	line:967
+parseBuffer	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseBuffer(buffer) {$/;"	function	line:983
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        switch (tag) {$/;"	function	line:1018
+load	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function load(url, callback) {$/;"	function	line:1110
+loadFn	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    loadFn(url, function(err, arrayBuffer) {$/;"	function	line:1113
+getByte	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getByte = function getByte(dataView, offset) {$/;"	function	line:1140
+getUShort	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getUShort = function(dataView, offset) {$/;"	function	line:1148
+getShort	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getShort = function(dataView, offset) {$/;"	function	line:1156
+getULong	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getULong = function(dataView, offset) {$/;"	function	line:1162
+getFixed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getFixed = function(dataView, offset) {$/;"	function	line:1168
+getTag	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getTag = function(dataView, offset) {$/;"	function	line:1176
+getOffset	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getOffset = function(dataView, offset, offSize) {$/;"	function	line:1187
+getBytes	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.getBytes = function(dataView, startOffset, endOffset) {$/;"	function	line:1198
+bytesToString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^exports.bytesToString = function(bytes) {$/;"	function	line:1208
+Parser	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function Parser(data, offset) {$/;"	function	line:1229
+parseByte	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseByte = function() {$/;"	function	line:1235
+parseChar	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseChar = function() {$/;"	function	line:1241
+parseUShort	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseUShort = function() {$/;"	function	line:1249
+parseShort	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseShort = function() {$/;"	function	line:1259
+parseF2Dot14	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseF2Dot14 = function() {$/;"	function	line:1265
+parseULong	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseULong = function() {$/;"	function	line:1271
+parseFixed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseFixed = function() {$/;"	function	line:1277
+parseUShortList	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseUShortList = function(count) {$/;"	function	line:1284
+parseString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseString = function(length) {$/;"	function	line:1297
+parseTag	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseTag = function() {$/;"	function	line:1309
+parseLongDateTime	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseLongDateTime = function() {$/;"	function	line:1316
+parseFixed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseFixed = function() {$/;"	function	line:1322
+parseVersion	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.parseVersion = function() {$/;"	function	line:1328
+skip	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Parser.prototype.skip = function(type, amount) {$/;"	function	line:1338
+Path	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function Path() {$/;"	function	line:1355
+moveTo	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Path.prototype.moveTo = function(x, y) {$/;"	function	line:1362
+lineTo	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Path.prototype.lineTo = function(x, y) {$/;"	function	line:1370
+extend	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Path.prototype.extend = function(pathOrCommands) {$/;"	function	line:1407
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Path.prototype.draw = function(ctx) {$/;"	function	line:1416
+toPathData	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Path.prototype.toPathData = function(decimalPlaces) {$/;"	function	line:1449
+floatToString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function floatToString(v) {$/;"	function	line:1452
+packValues	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function packValues() {$/;"	function	line:1460
+toSVG	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Path.prototype.toSVG = function(decimalPlaces) {$/;"	function	line:1496
+Table	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function Table(tableName, fields, options) {$/;"	function	line:1527
+sizeOf	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Table.prototype.sizeOf = function() {$/;"	function	line:1548
+encode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^Table.prototype.encode = function() {$/;"	function	line:1569
+equals	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function equals(a, b) {$/;"	function	line:1590
+parseCFFIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFIndex(data, start, conversionFn) {$/;"	function	line:1612
+parseFloatOperand	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseFloatOperand(parser) {$/;"	function	line:1648
+parseOperand	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseOperand(parser, b0) {$/;"	function	line:1674
+entriesToObject	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function entriesToObject(entries) {$/;"	function	line:1716
+parseCFFDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFDict(data, start, size) {$/;"	function	line:1740
+getCFFString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getCFFString(strings, index) {$/;"	function	line:1772
+interpretDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function interpretDict(dict, meta, strings) {$/;"	function	line:1784
+parseCFFHeader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFHeader(data, start) {$/;"	function	line:1807
+parseCFFTopDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFTopDict(data, strings) {$/;"	function	line:1850
+parseCFFPrivateDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFPrivateDict(data, start, size, strings) {$/;"	function	line:1856
+parseCFFCharset	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFCharset(data, start, nGlyphs, strings) {$/;"	function	line:1864
+parseCFFEncoding	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFEncoding(data, start, charset) {$/;"	function	line:1907
+parseCFFCharstring	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFCharstring(font, glyph, code) {$/;"	function	line:1940
+newContour	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function newContour(x, y) {$/;"	function	line:1954
+parseStems	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function parseStems() {$/;"	function	line:1963
+parse	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function parse(code) {$/;"	function	line:1978
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^            switch (v) {$/;"	function	line:1996
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^                switch (v) {$/;"	function	line:2071
+calcCFFSubroutineBias	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function calcCFFSubroutineBias(subrs) {$/;"	function	line:2345
+parseCFFTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCFFTable(data, start, font) {$/;"	function	line:2359
+encodeString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function encodeString(s, strings) {$/;"	function	line:2413
+makeHeader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeHeader() {$/;"	function	line:2434
+makeNameIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeNameIndex(fontNames) {$/;"	function	line:2443
+makeDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeDict(meta, attrs, strings) {$/;"	function	line:2456
+makeTopDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeTopDict(attrs, strings) {$/;"	function	line:2474
+makeTopDictIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeTopDictIndex(topDict) {$/;"	function	line:2482
+makeStringIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeStringIndex(strings) {$/;"	function	line:2490
+makeGlobalSubrIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeGlobalSubrIndex() {$/;"	function	line:2502
+makeCharsets	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeCharsets(glyphNames, strings) {$/;"	function	line:2509
+glyphToOps	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function glyphToOps(glyph) {$/;"	function	line:2522
+makeCharStringsIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeCharStringsIndex(glyphs) {$/;"	function	line:2591
+makePrivateDict	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makePrivateDict(attrs, strings) {$/;"	function	line:2605
+makePrivateDictIndex	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makePrivateDictIndex(privateDict) {$/;"	function	line:2613
+makeCFFTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeCFFTable(glyphs, options) {$/;"	function	line:2621
+parseCmapTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCmapTable(data, start) {$/;"	function	line:2710
+addSegment	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function addSegment(t, code, glyphIndex) {$/;"	function	line:2790
+addTerminatorSegment	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function addTerminatorSegment(t) {$/;"	function	line:2799
+makeCmapTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeCmapTable(glyphs) {$/;"	function	line:2808
+parseGlyphCoordinate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseGlyphCoordinate(p, flag, previousValue, shortVectorBitMask, sameBitMask) {$/;"	function	line:2897
+parseGlyph	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseGlyph(glyph, data, start) {$/;"	function	line:2923
+transformPoints	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function transformPoints(points, transform) {$/;"	function	line:3047
+getContours	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getContours(points) {$/;"	function	line:3063
+getPath	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getPath(points) {$/;"	function	line:3080
+buildPath	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function buildPath(glyphs, glyph) {$/;"	function	line:3150
+parseGlyfTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseGlyfTable(data, start, loca, font) {$/;"	function	line:3166
+parseTaggedListTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseTaggedListTable(data, start) {$/;"	function	line:3197
+parseCoverageTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseCoverageTable(data, start) {$/;"	function	line:3211
+parseClassDefTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseClassDefTable(data, start) {$/;"	function	line:3235
+parsePairPosSubTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parsePairPosSubTable(data, start) {$/;"	function	line:3282
+parseLookupTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseLookupTable(data, start) {$/;"	function	line:3369
+getKerningValue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        table.getKerningValue = function(leftGlyph, rightGlyph) {$/;"	function	line:3388
+parseGposTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseGposTable(data, start, font) {$/;"	function	line:3403
+parseHeadTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseHeadTable(data, start) {$/;"	function	line:3438
+makeHeadTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeHeadTable(options) {$/;"	function	line:3462
+parseHheaTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseHheaTable(data, start) {$/;"	function	line:3497
+makeHheaTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeHheaTable(options) {$/;"	function	line:3517
+parseHmtxTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseHmtxTable(data, start, numMetrics, numGlyphs, glyphs) {$/;"	function	line:3553
+makeHmtxTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeHmtxTable(glyphs) {$/;"	function	line:3570
+parseKernTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseKernTable(data, start) {$/;"	function	line:3597
+parseLocaTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseLocaTable(data, start, numGlyphs, shortVersion) {$/;"	function	line:3637
+parseMaxpTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseMaxpTable(data, start) {$/;"	function	line:3669
+makeMaxpTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeMaxpTable(numGlyphs) {$/;"	function	line:3693
+parseNameTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseNameTable(data, start) {$/;"	function	line:3743
+makeNameRecord	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeNameRecord(platformID, encodingID, languageID, nameID, length, offset) {$/;"	function	line:3787
+addMacintoshNameRecord	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function addMacintoshNameRecord(t, recordID, s, offset) {$/;"	function	line:3798
+addWindowsNameRecord	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function addWindowsNameRecord(t, recordID, s, offset) {$/;"	function	line:3807
+makeNameTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeNameTable(options) {$/;"	function	line:3816
+getUnicodeRange	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getUnicodeRange(unicode) {$/;"	function	line:3993
+parseOS2Table	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parseOS2Table(data, start) {$/;"	function	line:4005
+makeOS2Table	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeOS2Table(options) {$/;"	function	line:4058
+parsePostTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function parsePostTable(data, start) {$/;"	function	line:4125
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    switch (post.version) {$/;"	function	line:4138
+makePostTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makePostTable() {$/;"	function	line:4170
+log2	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function log2(v) {$/;"	function	line:4209
+computeCheckSum	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function computeCheckSum(bytes) {$/;"	function	line:4213
+makeTableRecord	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeTableRecord(tag, checkSum, offset, length) {$/;"	function	line:4230
+makeSfntTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function makeSfntTable(tables) {$/;"	function	line:4239
+metricsForChar	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function metricsForChar(font, chars, notFoundMetrics) {$/;"	function	line:4295
+average	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function average(vs) {$/;"	function	line:4307
+fontToSfntTable	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function fontToSfntTable(font) {$/;"	function	line:4318
+constant	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function constant(v) {$/;"	function	line:4506
+BYTE	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.BYTE = function(v) {$/;"	function	line:4515
+CHAR	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.CHAR = function(v) {$/;"	function	line:4523
+CHARARRAY	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.CHARARRAY = function(v) {$/;"	function	line:4530
+CHARARRAY	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.CHARARRAY = function(v) {$/;"	function	line:4539
+USHORT	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.USHORT = function(v) {$/;"	function	line:4544
+SHORT	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.SHORT = function(v) {$/;"	function	line:4551
+UINT24	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.UINT24 = function(v) {$/;"	function	line:4563
+ULONG	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.ULONG = function(v) {$/;"	function	line:4570
+LONG	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.LONG = function(v) {$/;"	function	line:4577
+LONGDATETIME	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.LONGDATETIME = function() {$/;"	function	line:4598
+TAG	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.TAG = function(v) {$/;"	function	line:4605
+NUMBER	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.NUMBER = function(v) {$/;"	function	line:4630
+NUMBER	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.NUMBER = function(v) {$/;"	function	line:4646
+NUMBER16	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.NUMBER16 = function(v) {$/;"	function	line:4652
+NUMBER32	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.NUMBER32 = function(v) {$/;"	function	line:4661
+REAL	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.REAL = function(v) {$/;"	function	line:4667
+REAL	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.REAL = function(v) {$/;"	function	line:4703
+UTF16	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.UTF16 = function(v) {$/;"	function	line:4714
+UTF16	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.UTF16 = function(v) {$/;"	function	line:4724
+INDEX	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.INDEX = function(l) {$/;"	function	line:4730
+INDEX	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.INDEX = function(v) {$/;"	function	line:4767
+DICT	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.DICT = function(m) {$/;"	function	line:4774
+DICT	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.DICT = function(m) {$/;"	function	line:4791
+OPERATOR	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.OPERATOR = function(v) {$/;"	function	line:4795
+OPERAND	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.OPERAND = function(v, type) {$/;"	function	line:4803
+CHARSTRING	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.CHARSTRING = function(ops) {$/;"	function	line:4836
+CHARSTRING	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.CHARSTRING = function(ops) {$/;"	function	line:4856
+OBJECT	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.OBJECT = function(v) {$/;"	function	line:4863
+TABLE	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.TABLE = function(table) {$/;"	function	line:4872
+LITERAL	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^encode.LITERAL = function(v) {$/;"	function	line:4893
+LITERAL	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^sizeOf.LITERAL = function(v) {$/;"	function	line:4897
+noop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    , noop = function () {}$/;"	function	line:4933
+xhr	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    , xhr = function(o) {$/;"	function	line:4954
+dataFilter	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        dataFilter: function (data) {$/;"	function	line:4972
+succeed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function succeed(r) {$/;"	function	line:4977
+handleReadyState	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function handleReadyState(r, success, error) {$/;"	function	line:4983
+setHeaders	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function setHeaders(http, o) {$/;"	function	line:4998
+setCredentials	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function setCredentials(http, o) {$/;"	function	line:5014
+generalCallback	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function generalCallback(data) {$/;"	function	line:5020
+urlappend	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function urlappend (url, s) {$/;"	function	line:5024
+handleJsonp	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function handleJsonp(o, fn, err, url) {$/;"	function	line:5028
+abort	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^      abort: function () {$/;"	function	line:5078
+getRequest	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function getRequest(fn, err) {$/;"	function	line:5088
+onprogress	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        http.onprogress = function() {}$/;"	function	line:5120
+setTimeout	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^      setTimeout(function () {$/;"	function	line:5127
+Reqwest	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function Reqwest(o, fn) {$/;"	function	line:5136
+setType	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function setType(header) {$/;"	function	line:5143
+init	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function init(o, fn) {$/;"	function	line:5151
+_successHandler	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    this._successHandler = function(){}$/;"	function	line:5160
+_successHandler	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^      this._successHandler = function () {$/;"	function	line:5180
+complete	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function complete (resp) {$/;"	function	line:5197
+success	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function success (resp) {$/;"	function	line:5205
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^        switch (type) {$/;"	function	line:5217
+timedOut	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function timedOut() {$/;"	function	line:5253
+error	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    function error(resp, msg, t) {$/;"	function	line:5258
+abort	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    abort: function () {$/;"	function	line:5274
+retry	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  , retry: function () {$/;"	function	line:5279
+then	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  , then: function (success, fail) {$/;"	function	line:5291
+always	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  , always: function (fn) {$/;"	function	line:5308
+fail	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  , fail: function (fn) {$/;"	function	line:5320
+reqwest	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function reqwest(o, fn) {$/;"	function	line:5333
+normalize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function normalize(s) {$/;"	function	line:5338
+serial	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function serial(el, cb) {$/;"	function	line:5342
+optCb	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^      , optCb = function (o) {$/;"	function	line:5345
+switch	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    switch (t) {$/;"	function	line:5356
+eachFormElement	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function eachFormElement() {$/;"	function	line:5384
+serializeSubtags	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^      , serializeSubtags = function (e, tags) {$/;"	function	line:5387
+serializeQueryString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function serializeQueryString() {$/;"	function	line:5403
+serializeHash	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function serializeHash() {$/;"	function	line:5408
+serializeArray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  reqwest.serializeArray = function () {$/;"	function	line:5420
+serialize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  reqwest.serialize = function () {$/;"	function	line:5428
+toQueryString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  reqwest.toQueryString = function (o, trad) {$/;"	function	line:5444
+add	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^      , add = function (key, value) {$/;"	function	line:5449
+buildParams	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function buildParams(prefix, obj, traditional, add) {$/;"	function	line:5469
+getcallbackPrefix	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  reqwest.getcallbackPrefix = function () {$/;"	function	line:5496
+compat	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  reqwest.compat = function (o, fn) {$/;"	function	line:5502
+ajaxSetup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  reqwest.ajaxSetup = function (options) {$/;"	function	line:5512
+_globalInit	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^var _globalInit = function() {$/;"	function	line:5595
+_hsbaToHSLA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.ColorConversion._hsbaToHSLA = function(hsba) {$/;"	function	line:5639
+_hsbaToRGBA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.ColorConversion._hsbaToRGBA = function(hsba) {$/;"	function	line:5665
+_hslaToHSBA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.ColorConversion._hslaToHSBA = function(hsla) {$/;"	function	line:5714
+_hslaToRGBA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.ColorConversion._hslaToRGBA = function(hsla){$/;"	function	line:5742
+hzvToRGB	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    var hzvToRGB = function(hue, zest, val) {$/;"	function	line:5765
+_rgbaToHSBA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.ColorConversion._rgbaToHSBA = function(rgba) {$/;"	function	line:5795
+_rgbaToHSLA	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.ColorConversion._rgbaToHSLA = function(rgba) {$/;"	function	line:5830
+alpha	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.alpha = function(c) {$/;"	function	line:5922
+blue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.blue = function(c) {$/;"	function	line:5953
+brightness	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.brightness = function(c) {$/;"	function	line:5984
+color	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.color = function() {$/;"	function	line:6161
+green	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.green = function(c) {$/;"	function	line:6203
+hue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.hue = function(c) {$/;"	function	line:6241
+lerpColor	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.lerpColor = function(c1, c2, amt) {$/;"	function	line:6292
+lightness	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.lightness = function(c) {$/;"	function	line:6360
+red	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.red = function(c) {$/;"	function	line:6401
+saturation	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.saturation = function(c) {$/;"	function	line:6438
+Color	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color = function(renderer, vals) {$/;"	function	line:6479
+toString	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype.toString = function() {$/;"	function	line:6502
+_getAlpha	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getAlpha = function() {$/;"	function	line:6508
+_getBlue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getBlue = function() {$/;"	function	line:6512
+_getBrightness	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getBrightness = function() {$/;"	function	line:6516
+_getGreen	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getGreen = function() {$/;"	function	line:6523
+_getHue	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getHue = function() {$/;"	function	line:6533
+_getLightness	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getLightness = function() {$/;"	function	line:6547
+_getRed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getRed = function() {$/;"	function	line:6554
+_getSaturation	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color.prototype._getSaturation = function() {$/;"	function	line:6563
+_parseInputs	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Color._parseInputs = function() {$/;"	function	line:6878
+background	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.background = function() {$/;"	function	line:7206
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:7228
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:7232
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mousePressed() {$/;"	function	line:7236
+clear	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.clear = function() {$/;"	function	line:7247
+colorMode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.colorMode = function() {$/;"	function	line:7332
+fill	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.fill = function() {$/;"	function	line:7489
+noFill	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.noFill = function() {$/;"	function	line:7512
+noStroke	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.noStroke = function() {$/;"	function	line:7536
+stroke	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.stroke = function() {$/;"	function	line:7679
+arc	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.arc = function(x, y, w, h, start, stop, mode) {$/;"	function	line:7761
+ellipse	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.ellipse = function() {$/;"	function	line:7851
+line	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.line = function() {$/;"	function	line:7925
+point	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.point = function() {$/;"	function	line:7976
+quad	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.quad = function() {$/;"	function	line:8041
+rect	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.rect = function () {$/;"	function	line:8139
+triangle	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.triangle = function() {$/;"	function	line:8185
+ellipseMode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.ellipseMode = function(m) {$/;"	function	line:8270
+noSmooth	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.noSmooth = function() {$/;"	function	line:8303
+rectMode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.rectMode = function(m) {$/;"	function	line:8364
+smooth	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.smooth = function() {$/;"	function	line:8398
+strokeCap	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.strokeCap = function(cap) {$/;"	function	line:8428
+strokeJoin	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.strokeJoin = function(join) {$/;"	function	line:8492
+strokeWeight	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.strokeWeight = function(w) {$/;"	function	line:8524
+modeAdjust	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  modeAdjust: function(a, b, c, d, mode) {$/;"	function	line:8540
+arcModeAdjust	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  arcModeAdjust: function(a, b, c, d, mode) {$/;"	function	line:8552
+p5	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^var p5 = function(sketch, node, sync) {$/;"	function	line:8825
+preload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function preload() {  \/\/ preload() runs once$/;"	function	line:8852
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function setup() {  \/\/ setup() waits until preload() is done$/;"	function	line:8856
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function draw() {$/;"	function	line:8862
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function setup() {$/;"	function	line:8888
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function draw() {$/;"	function	line:8894
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function setup() {  \/\/ setup() runs once$/;"	function	line:8935
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function draw() {  \/\/ draw() loops forever, until stopped$/;"	function	line:8938
+_start	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._start = function () {$/;"	function	line:9002
+_runIfPreloadsAreDone	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._runIfPreloadsAreDone = function(){$/;"	function	line:9047
+_decrementPreload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._decrementPreload = function(){$/;"	function	line:9060
+_wrapPreload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._wrapPreload = function(obj, fnName){$/;"	function	line:9066
+_incrementPreload	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._incrementPreload = function(){$/;"	function	line:9080
+_setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._setup = function() {$/;"	function	line:9085
+_draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._draw = function () {$/;"	function	line:9127
+_runFrames	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._runFrames = function() {$/;"	function	line:9160
+_setProperty	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this._setProperty = function(prop, value) {$/;"	function	line:9166
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function draw() {$/;"	function	line:9182
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^   * function mousePressed() {$/;"	function	line:9186
+remove	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  this.remove = function() {$/;"	function	line:9195
+focusHandler	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  var focusHandler = function() {$/;"	function	line:9306
+blurHandler	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  var blurHandler = function() {$/;"	function	line:9309
+registerPreloadMethod	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.registerPreloadMethod = function(fnString, obj) {$/;"	function	line:9360
+registerMethod	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.registerMethod = function(name, m) {$/;"	function	line:9367
+_createFriendlyGlobalFunctionBinder	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype._createFriendlyGlobalFunctionBinder = function(options) {$/;"	function	line:9374
+get	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^          get: function() {$/;"	function	line:9414
+set	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^          set: function(newValue) {$/;"	function	line:9417
+bezier	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.bezier = function() {$/;"	function	line:9525
+bezierDetail	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.bezierDetail = function(d) {$/;"	function	line:9566
+bezierPoint	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.bezierPoint = function(a, b, c, d, t) {$/;"	function	line:9608
+bezierTangent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.bezierTangent = function(a, b, c, d, t) {$/;"	function	line:9681
+curve	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.curve = function() {$/;"	function	line:9766
+curveDetail	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.curveDetail = function(d) {$/;"	function	line:9806
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:9828
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:9833
+curveTightness	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.curveTightness = function (t) {$/;"	function	line:9852
+curvePoint	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.curvePoint = function(a, b, c, d, t) {$/;"	function	line:9893
+curveTangent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.curveTangent = function(a, b,c, d, t) {$/;"	function	line:9938
+print	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  p5.prototype.print = function(args) {$/;"	function	line:10001
+print	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  p5.prototype.print = function() {};$/;"	function	line:10017
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ *     function setup() {$/;"	function	line:10029
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ *     function draw() {$/;"	function	line:10036
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:10058
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:10095
+cursor	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.cursor = function(type, x, y) {$/;"	function	line:10109
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10161
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:10167
+frameRate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.frameRate = function(fps) {$/;"	function	line:10192
+getFrameRate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.getFrameRate = function() {$/;"	function	line:10206
+setFrameRate	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.setFrameRate = function(fps) {$/;"	function	line:10221
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10231
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:10235
+noCursor	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.noCursor = function() {$/;"	function	line:10246
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10321
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:10325
+windowResized	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function windowResized() {$/;"	function	line:10329
+_onresize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype._onresize = function(e){$/;"	function	line:10336
+getWindowWidth	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getWindowWidth() {$/;"	function	line:10349
+getWindowHeight	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function getWindowHeight() {$/;"	function	line:10356
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10400
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mousePressed() {$/;"	function	line:10403
+fullscreen	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.fullscreen = function(val) {$/;"	function	line:10416
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10445
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10455
+pixelDensity	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.pixelDensity = function(val) {$/;"	function	line:10468
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10485
+displayDensity	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.displayDensity = function() {$/;"	function	line:10498
+launchFullscreen	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function launchFullscreen(element) {$/;"	function	line:10502
+exitFullscreen	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function exitFullscreen() {$/;"	function	line:10521
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10544
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:10550
+getURL	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.getURL = function() {$/;"	function	line:10562
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10571
+getURLPath	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.getURLPath = function() {$/;"	function	line:10583
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10595
+getURLParams	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.prototype.getURLParams = function() {$/;"	function	line:10607
+getType	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^var getType = function( obj ) {$/;"	function	line:10641
+report	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function report(message, func, color) {$/;"	function	line:10667
+_friendlyFileLoadError	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5._friendlyFileLoadError = function (errorType, filePath) {$/;"	function	line:10721
+friendlyWelcome	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function friendlyWelcome() {$/;"	function	line:10730
+testColors	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^\/* function testColors() {$/;"	function	line:10754
+defineMisusedAtTopLevelCode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function defineMisusedAtTopLevelCode() {$/;"	function	line:10786
+getSymbols	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  var getSymbols = function(obj) {$/;"	function	line:10789
+helpForMisusedAtTopLevelCode	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function helpForMisusedAtTopLevelCode(e, log) {$/;"	function	line:10832
+Element	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element = function(elt, pInst) {$/;"	function	line:10917
+parent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.parent = function(p) {$/;"	function	line:10972
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:10999
+id	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.id = function(id) {$/;"	function	line:11011
+class	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.class = function(c) {$/;"	function	line:11031
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11054
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11062
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mousePressed() {$/;"	function	line:11068
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11073
+mousePressed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mousePressed = function (fxn) {$/;"	function	line:11082
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11112
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11120
+mouseWheel	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mouseWheel() {$/;"	function	line:11127
+changeSize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeSize(event) {$/;"	function	line:11133
+mouseWheel	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mouseWheel = function (fxn) {$/;"	function	line:11147
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11166
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11174
+mouseReleased	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mouseReleased() {$/;"	function	line:11181
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11187
+mouseReleased	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mouseReleased = function (fxn) {$/;"	function	line:11197
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11217
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11225
+mouseClicked	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mouseClicked() {$/;"	function	line:11232
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11238
+mouseClicked	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mouseClicked = function (fxn) {$/;"	function	line:11248
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11267
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11275
+mouseMoved	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mouseMoved() {$/;"	function	line:11283
+changeSize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeSize() {$/;"	function	line:11291
+mouseMoved	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mouseMoved = function (fxn) {$/;"	function	line:11304
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11324
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11330
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11334
+mouseOver	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mouseOver = function (fxn) {$/;"	function	line:11347
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11366
+mySelectEvent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function mySelectEvent() {$/;"	function	line:11377
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11387
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11395
+changeFill	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeFill() {$/;"	function	line:11400
+changed	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.changed = function (fxn) {$/;"	function	line:11413
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11431
+myInputEvent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function myInputEvent() {$/;"	function	line:11436
+input	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.input = function (fxn) {$/;"	function	line:11445
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11464
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11470
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11474
+mouseOut	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.mouseOut = function (fxn) {$/;"	function	line:11486
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11504
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11512
+touchStarted	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function touchStarted() {$/;"	function	line:11518
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11523
+touchStarted	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.touchStarted = function (fxn) {$/;"	function	line:11532
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11550
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11557
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11562
+touchMoved	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.touchMoved = function (fxn) {$/;"	function	line:11571
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11590
+draw	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function draw() {$/;"	function	line:11598
+touchEnded	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function touchEnded() {$/;"	function	line:11604
+changeGray	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function changeGray() {$/;"	function	line:11609
+touchEnded	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.touchEnded = function (fxn) {$/;"	function	line:11619
+dragOver	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.dragOver = function (fxn) {$/;"	function	line:11637
+dragLeave	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.dragLeave = function (fxn) {$/;"	function	line:11652
+setup	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function setup() {$/;"	function	line:11670
+gotFile	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^ * function gotFile(file) {$/;"	function	line:11678
+drop	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype.drop = function (callback, fxn) {$/;"	function	line:11689
+makeLoader	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^  function makeLoader(theFile) {$/;"	function	line:11691
+attachListener	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    attachListener('dragover',function(evt) {$/;"	function	line:11705
+attachListener	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    attachListener('dragleave',function(evt) {$/;"	function	line:11711
+attachListener	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^    attachListener('drop', function(evt) {$/;"	function	line:11722
+attachListener	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function attachListener(ev, fxn, ctx) {$/;"	function	line:11756
+_setProperty	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Element.prototype._setProperty = function (prop, value) {$/;"	function	line:11769
+Graphics	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Graphics = function(w, h, renderer, pInst) {$/;"	function	line:11800
+remove	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Graphics.prototype.remove = function() {$/;"	function	line:11841
+Renderer	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer = function(elt, pInst, isMainCanvas) {$/;"	function	line:11874
+resize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype.resize = function(w, h) {$/;"	function	line:11926
+textLeading	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype.textLeading = function(l) {$/;"	function	line:11939
+textSize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype.textSize = function(s) {$/;"	function	line:11950
+textStyle	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype.textStyle = function(s) {$/;"	function	line:11962
+textAscent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype.textAscent = function() {$/;"	function	line:11978
+textDescent	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype.textDescent = function() {$/;"	function	line:11985
+_applyDefaults	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype._applyDefaults = function(){$/;"	function	line:11993
+_isOpenType	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype._isOpenType = function(f) {$/;"	function	line:12000
+_updateTextMetrics	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer.prototype._updateTextMetrics = function() {$/;"	function	line:12006
+calculateOffset	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^function calculateOffset(object) {$/;"	function	line:12057
+Renderer2D	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer2D = function(elt, pInst, isMainCanvas){$/;"	function	line:12091
+_applyDefaults	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer2D.prototype._applyDefaults = function() {$/;"	function	line:12100
+resize	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer2D.prototype.resize = function(w,h) {$/;"	function	line:12107
+background	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer2D.prototype.background = function() {$/;"	function	line:12117
+clear	E:\Users\Jakob\Game Development\Git\AlgMedia\libraries\p5.js	/^p5.Renderer2D.prototype.clear = function() {$/;"	func
