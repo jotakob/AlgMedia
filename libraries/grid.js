@@ -24,12 +24,11 @@ GRID_LINE_WIDTH = 1;
  *     nDims = the number of dimensions (2 or 3).
  *     ui = the UI object (used for rendering).
  */
-function Grid(N, size, nDims, ui) {
+function Grid(N, size, nDims) {
     // set the number of cells in each axis
     this.N = N;
     this.size = size;
     this.nDims = nDims;
-    this.ui = ui;
 
     // compute the length of each cell in each axis
     this.len_cells = new Array();
@@ -45,7 +44,7 @@ function Grid(N, size, nDims, ui) {
     this.generateDensArray = function() {
         return zeros3d(this.N[X_DIM]+2, this.N[Y_DIM]+2, this.N[Z_DIM]+2);
     }
-    
+
     // allocate the velocity and density field arrays (3rd dim ignored for 2D).
     this.vel = this.generateVelArray();
     this.prev_vel = this.generateVelArray();
@@ -185,43 +184,50 @@ function Grid(N, size, nDims, ui) {
 
     // Render a 2D representation of this Grid. Only works for 2D setup.
     this.render2D = function(ctx) {
-        ctx.clearRect(0, 0, this.size[X_DIM], this.size[Y_DIM]);
+        clear();
+        background("#000000");
         ctx.save();
         // draw the densities
-        var total_dens = 0;
         var w = Math.floor(this.len_cells[X_DIM]);
         var h = Math.floor(this.len_cells[Y_DIM]);
-        var start_x = (this.ui.width - w*(this.N[X_DIM]+2)) / 2;
-        var start_y = (this.ui.height - h*(this.N[Y_DIM]+2)) / 2;
-        for(var i=0; i<this.N[X_DIM]+2; i++) {
-            for(var j=0; j<this.N[Y_DIM]+2; j++) {
-                var dens = this.dens[i][j][1];
-                total_dens += dens;
-                if(dens > 0) {
-                    var x = Math.floor(i * w + start_x);
-                    var y = Math.floor(j * h + start_y);
-                    // TODO - changed for visualization
-                    var real_dens = dens;
-                    dens *= 1000;
-                    ctx.fillStyle = "rgba(" + GRID_DENSITY_COLOR + ", " + dens + ")";
-                    if(dens >= 1)
+        var start_x = (sim.width - w*(this.N[X_DIM]+2)) / 2;
+        var start_y = (sim.height - h*(this.N[Y_DIM]+2)) / 2;
+        for(var i=1; i<this.N[X_DIM]+2; i++)
+        {
+            for(var j=1; j<this.N[Y_DIM]+2; j++)
+            {
+                var d = [];
+                var c = [];
+                d[0] = this.dens[i-1][j-1][1];
+                d[1] = this.dens[i-1][j][1];
+                d[2] = this.dens[i][j-1][1];
+                d[3] = this.dens[i][j][1];
+                for (var k = 0; k < d.length; k++)
+                {
+                    var dens = d[k] * 1000;
+                    if(dens >= 1) {
                         dens = 1;
-                    if(real_dens >= 1)
-                        ctx.fillStyle = "#FF0000";
-                    ctx.fillRect(x, y, w, h);
+                    }
+                    c[k] = "rgba(" + GRID_DENSITY_COLOR + ", " + dens + ")";
                 }
+                var x = Math.floor((i-0.5) * w + start_x);
+                var y = Math.floor((j-0.5) * h + start_y);
+
+                this.drawGradient(ctx, x, y, w, h, c)
             }
         }
+
+
         // if option is enabled, draw the grid
-        if(this.ui.show_grid) {
-            ctx.strokeStyle = GRID_COLOR;
+        if(false) {
+            stroke(GRID_COLOR);
             ctx.lineWidth = GRID_LINE_WIDTH;
             // draw the x axis lines
             for(var i=0; i<this.N[X_DIM]+2+1; i++) {
                 ctx.beginPath();
                 var x = Math.floor(i * w + start_x);
                 ctx.moveTo(x, start_y);
-                ctx.lineTo(x, this.ui.height - start_y);
+                ctx.lineTo(x, sim.height - start_y);
                 ctx.stroke();
             }
             // draw the y axis lines
@@ -229,12 +235,12 @@ function Grid(N, size, nDims, ui) {
                 ctx.beginPath();
                 var y = Math.floor(i * h + start_y);
                 ctx.moveTo(start_x, y);
-                ctx.lineTo(this.ui.width - start_x, y);
+                ctx.lineTo(sim.width - start_x, y);
                 ctx.stroke();
             }
         }
         // if option is enabled, draw the velocity vectors
-        if(this.ui.show_vels) {
+        if(false) {
             // TODO - fix the renderring here to match the above fixes
             ctx.strokeStyle = GRID_VELOCITY_COLOR;
             ctx.lineWidth = GRID_LINE_WIDTH;
@@ -251,13 +257,28 @@ function Grid(N, size, nDims, ui) {
                 }
             }
         }
-        // Display tooltips
-        if(this.ui.show_stats) {
-            ctx.fillStyle = GRID_TEXT_COLOR;
-            ctx.font = "16px Ariel";
-            total_dens = Math.round(10000*total_dens)/10000;
-            ctx.fillText("Total System Density: " + total_dens, 20, 30);
-        }
         ctx.restore();
+    }
+
+    this.drawGradient = function(ctx, x, y, w, h, c)
+    {
+        var c0 = c[0];
+        var c1 = c[1];
+        var c2 = c[2];
+        var c3 = c[3]
+        /*for (var i=0; i<=w; i++)
+        {
+            var cTop = lerpColor(c0,c1,i/w);
+            var cBottom = lerpColor(c2,c3,i/w);
+            for (var j=0; j<=h; j++)
+            {
+                var c = lerpColor(cTop,cBottom, j/h);
+                fill(c);
+                point(x+i, j+y);
+            }
+        }*/
+
+        ctx.fillStyle = c[0];
+        ctx.fillRect(x, y, w, h);
     }
 }

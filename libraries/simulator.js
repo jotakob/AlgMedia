@@ -3,17 +3,26 @@
  * simulation values, as well as the main algorithm steps.
  */
 
+ACT_DENSITY_SRC = 0;
+ACT_VELOCITY_SRC = 1;
 
 BOUNDARY_MIRROR = 0;
 BOUNDARY_OPPOSE_X = 1;
 BOUNDARY_OPPOSE_Y = 2;
 
+N_DIMS = 2;
+
+X_DIM = 0;
+Y_DIM = 1;
+Z_DIM = 2;
+
+G_FORCE = -9.8;
 
 /* The Simulator object provides an API for running the simulation using
  * the resources made available by the Grid data structure.
  * Parameters:
- *      ui - a UI object that keeps track of the GUI and user interaction,
- *           and also provides all of the sim parameters.
+ *      width and height of the grid
+ *      width and height of the canvas
  */
 function Simulator(w, h, cW, cH) {
     this.action_type = ACT_DENSITY_SRC;
@@ -25,11 +34,11 @@ function Simulator(w, h, cW, cH) {
     this.width = cW
     this.height = cH
     this.solver_iters = 20;
+    this.ctx = document.getElementById("defaultCanvas0").getContext("2d");
 
     this.timeStep = this.dT;
-    // TODO - change ui.___ to getter functions.
     this.grid = new Grid([this.grid_cols, this.grid_rows, 1],
-                         [this.width, this.height, 0], 2, ui);
+                         [this.width, this.height, 0], 2);
 
     // To each element of array dest adds the respective element of the
     // source (also an array) multiplied by the time step.
@@ -49,7 +58,7 @@ function Simulator(w, h, cW, cH) {
     this.diffuse = function(cur, prev, k, bMode) {
         //var a = this.timeStep * k * this.grid.N[X_DIM] * this.grid.N[Y_DIM];
         var a = this.timeStep * k * Math.sqrt(this.width * this.height);
-        for(var iter=0; iter<this.ui.solver_iters; iter++) {
+        for(var iter=0; iter<this.solver_iters; iter++) {
             for(var i=1; i<=this.grid.N[X_DIM]; i++) {
                 for(var j=1; j<=this.grid.N[Y_DIM]; j++) {
                     cur[i][j][1] = (prev[i][j][1]
@@ -116,7 +125,7 @@ function Simulator(w, h, cW, cH) {
         this.setBoundary(div, BOUNDARY_MIRROR);
         this.setBoundary(p, BOUNDARY_MIRROR);
         // TODO - move to a separate function (shared w/ diffuse)
-        for(var iter=0; iter<this.ui.solver_iters; iter++) {
+        for(var iter=0; iter<this.solver_iters; iter++) {
             for(var i=1; i<=this.grid.N[X_DIM]; i++) {
                 for(var j=1; j<=this.grid.N[Y_DIM]; j++) {
                     p[i][j][1] = (div[i][j][1]
@@ -192,7 +201,7 @@ function Simulator(w, h, cW, cH) {
         this.grid.swapV();
         for(var dim=0; dim<N_DIMS; dim++)
             this.diffuse(this.grid.vel[dim], this.grid.prev_vel[dim],
-                         this.ui.visc, dim+1); // TODO - boundary dim
+                         this.visc, dim+1); // TODO - boundary dim
         this.project(this.grid.vel, this.grid.prev_vel);
         this.grid.swapV();
         for(var dim=0; dim<N_DIMS; dim++)
@@ -208,7 +217,7 @@ function Simulator(w, h, cW, cH) {
         this.addSource(this.grid.dens, this.grid.src_dens);
         this.grid.swapD();
         this.diffuse(this.grid.dens, this.grid.prev_dens,
-                     this.ui.diff, BOUNDARY_MIRROR);
+                     this.diff, BOUNDARY_MIRROR);
         this.grid.swapD();
         this.advect(this.grid.dens, this.grid.prev_dens,
                     this.grid.vel, BOUNDARY_MIRROR);
@@ -216,23 +225,19 @@ function Simulator(w, h, cW, cH) {
     }
 
     // Take one step in the simulation.
-    this.step = function(ctx) {
+    this.step = function() {
         //this.grid.clearCurrent();
         this.grid.clearPrev();
         this.grid.clearSources();
-        var src_point = this.ui.getSource();
-        if(src_point) {
-            if(this.ui.getActionType() == ACT_DENSITY_SRC)
-                this.grid.addDensSource(src_point.x, src_point.y, 1);
-            else {
-                var vX = this.ui.getDragX();
-                var vY = this.ui.getDragY();
-                this.grid.addVelSource(src_point.x, src_point.y, vX, vY);
-            }
+        var sources = getSources();
+        for (var i = 0; i < sources.length; i++) {
+            var src = sources[i]
+            this.grid.addDensSource(src.x, src.y, 1);
+            this.grid.addVelSource(src.x, src.y, src.vX, src.vY);
         }
         this.vStep();
         this.dStep();
-        this.grid.render(ui.ctx, ui.show_grid, ui.show_vels);
+        this.grid.render(this.ctx);
     }
 
     // Adds gravity to the simulation. Pass negative g-force value to
@@ -244,4 +249,13 @@ function Simulator(w, h, cW, cH) {
                 for(var k=0; k<this.grid.N[Z_DIM]+2; k++)
                     this.grid.src_vel[Y_DIM][i][j][k] = g;
     }
+}
+
+
+function Source(x, y, vX, vY) {
+    this.x = x;
+    this.y = y;
+    this.vX = vX;
+    this.vY = vY;
+    this.density = 1;
 }
