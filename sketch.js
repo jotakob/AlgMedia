@@ -1,9 +1,9 @@
 "use strict";
 var Field = {};
 var viscosity = 0.001;
-var hGridSize = 96;
+var hGridSize = 112;
 var vGridSize = 64;
-var resolution = 8;
+var resolution = 16;
 var sim;
 
 function setup()
@@ -11,7 +11,7 @@ function setup()
     noStroke();
     frameRate(30);
     createCanvas(hGridSize * resolution, vGridSize * resolution);
-    sim = new Simulator(hGridSize, vGridSize, hGridSize * resolution, vGridSize * resolution);
+    sim = new Simulator(hGridSize, vGridSize, width, height);
 }
 
 function draw()
