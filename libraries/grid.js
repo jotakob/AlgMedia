@@ -12,6 +12,7 @@ GRID_BLACKNESS = "8%";
 GRID_VELOCITY_COLOR = "yellow";
 GRID_TEXT_COLOR = "#00FF00";
 GRID_LINE_WIDTH = 1;
+HUE_WIDTH = 0.9;
 
 
 /* The Grid object:
@@ -30,6 +31,7 @@ function Grid(N, size, nDims) {
     this.N = N;
     this.size = size;
     this.nDims = nDims;
+    this.hueShift = Math.floor(Math.random() * 360)
 
     // compute the length of each cell in each axis
     this.len_cells = new Array();
@@ -199,8 +201,8 @@ function Grid(N, size, nDims) {
             {
                 var dens = this.dens[i][j][1];
                 dens *= 1000;
-                dens = clamp(dens, -1, 1);
-                c = "hsl(" + (dens * 360) + ", 95%, 55%)";
+                dens = clamp(dens, -HUE_WIDTH, HUE_WIDTH);
+                c = "hsl(" + (dens * 360 + this.hueShift) + ", 95%, 55%)";
                 var x = Math.floor(i * w + start_x);
                 var y = Math.floor(j * h + start_y);
 
