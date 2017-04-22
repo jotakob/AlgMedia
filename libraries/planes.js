@@ -1,7 +1,7 @@
 "use strict";
 
 const DOMAIN = "getPlanes.php";
-const AREASIZE = 5;
+const AREASIZE = 2.5;
 const HAGENBERG_LAT = 48.3687;
 const HAGENBERG_LONG = 14.5126;
 const VELOCITY_SCALE = 0.1;
@@ -87,6 +87,7 @@ function PlaneData()
             plane.long = s[5];
             plane.lat = s[6];
             plane.heading = s[10];
+            plane.speed = s[9];
 
             if (plane.lat != null && plane.long != null)
             {

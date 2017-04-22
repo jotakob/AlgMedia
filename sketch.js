@@ -6,7 +6,7 @@ var vGridSize = 90;
 var resolution = 12;
 var sim;
 var planes;
-var DENSITY_SCALE = 0.2;
+var DENSITY_SCALE = 0.05;
 
 function setup()
 {
@@ -60,7 +60,7 @@ function getSources()
             n = Math.floor(n/10);
         }
         var dens = (sum%2 == 0) ? -1 : 1;
-        var src = new Source(p.x, p.y, 0, 0, dens * DENSITY_SCALE);
+        var src = new Source(p.x, p.y, 0, 0, dens * DENSITY_SCALE * (p.speed/140));
         sources.push(src);
     }
 
