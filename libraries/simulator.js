@@ -232,7 +232,7 @@ function Simulator(w, h, cW, cH) {
         var sources = getSources();
         for (var i = 0; i < sources.length; i++) {
             var src = sources[i]
-            this.grid.addDensSource(src.x, src.y, 1);
+            this.grid.addDensSource(src.x, src.y, src.density);
             this.grid.addVelSource(src.x, src.y, src.vX, src.vY);
         }
         this.vStep();
@@ -252,10 +252,10 @@ function Simulator(w, h, cW, cH) {
 }
 
 
-function Source(x, y, vX, vY) {
+function Source(x, y, vX, vY, density) {
     this.x = x;
     this.y = y;
     this.vX = vX;
     this.vY = vY;
-    this.density = 1;
+    this.density = density;
 }

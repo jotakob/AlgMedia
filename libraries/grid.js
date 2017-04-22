@@ -7,6 +7,8 @@
 /* Grid Object Constants: */
 GRID_COLOR = "#555555";
 GRID_DENSITY_COLOR = "0, 153, 153"; // has to be in RGB!
+GRID_WHITENESS = "16%";
+GRID_BLACKNESS = "8%";
 GRID_VELOCITY_COLOR = "yellow";
 GRID_TEXT_COLOR = "#00FF00";
 GRID_LINE_WIDTH = 1;
@@ -18,11 +20,10 @@ GRID_LINE_WIDTH = 1;
  * the grid itself and obtaining information about each grid cell.
  * Parameters:
  *     N = array with number of cells in each dimension (x, y, z) axis.
- *         for 2D, set this to 1.
+ *         for 2D, set z to 1.
  *     size = array with the size of each dimension (widht, height, depth).
  *         for 2D, set this to 0.
  *     nDims = the number of dimensions (2 or 3).
- *     ui = the UI object (used for rendering).
  */
 function Grid(N, size, nDims) {
     // set the number of cells in each axis
@@ -192,28 +193,20 @@ function Grid(N, size, nDims) {
         var h = Math.floor(this.len_cells[Y_DIM]);
         var start_x = (sim.width - w*(this.N[X_DIM]+2)) / 2;
         var start_y = (sim.height - h*(this.N[Y_DIM]+2)) / 2;
-        for(var i=1; i<this.N[X_DIM]+2; i++)
+        for(var i=0; i<this.N[X_DIM]+2; i++)
         {
-            for(var j=1; j<this.N[Y_DIM]+2; j++)
+            for(var j=0; j<this.N[Y_DIM]+2; j++)
             {
-                var d = [];
-                var c = [];
-                d[0] = this.dens[i-1][j-1][1];
-                d[1] = this.dens[i-1][j][1];
-                d[2] = this.dens[i][j-1][1];
-                d[3] = this.dens[i][j][1];
-                for (var k = 0; k < d.length; k++)
-                {
-                    var dens = d[k] * 1000;
-                    if(dens >= 1) {
-                        dens = 1;
-                    }
-                    c[k] = "rgba(" + GRID_DENSITY_COLOR + ", " + dens + ")";
-                }
-                var x = Math.floor((i-0.5) * w + start_x);
-                var y = Math.floor((j-0.5) * h + start_y);
+                var dens = this.dens[i][j][1];
+                dens *= 1000;
+                dens = clamp(dens, -1, 1);
+                c = "hsl(" + (dens * 360) + ", 95%, 55%)";
+                var x = Math.floor(i * w + start_x);
+                var y = Math.floor(j * h + start_y);
 
-                this.drawGradient(ctx, x, y, w, h, c)
+
+                ctx.fillStyle = c;
+                ctx.fillRect(x, y, w, h);
             }
         }
 
@@ -278,7 +271,5 @@ function Grid(N, size, nDims) {
             }
         }*/
 
-        ctx.fillStyle = c[0];
-        ctx.fillRect(x, y, w, h);
     }
 }

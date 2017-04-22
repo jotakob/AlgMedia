@@ -34,3 +34,9 @@ function zeros4d(n, m, l, k) {
         arr.push(zeros3d(m, l, k));
     return arr;
 }
+
+
+function clamp(number, min, max)
+{
+    return Math.max(min, Math.min(number, max));
+}
