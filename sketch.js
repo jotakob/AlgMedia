@@ -1,12 +1,17 @@
 "use strict";
 var Field = {};
 var viscosity = 0.001;
-var hGridSize = 160;
-var vGridSize = 90;
+var hGridSize = 150;
+var vGridSize = 80;
 var resolution = 12;
 var sim;
 var planes;
-var DENSITY_SCALE = 0.05;
+var DENSITY_SCALE = 0.1;
+
+var GRID_WHITENESS = "16%";
+var GRID_BLACKNESS = "8%";
+var HUE_WIDTH = 1.5;
+var HUE_SCALE = 180; //default 360
 
 function setup()
 {

@@ -7,12 +7,9 @@
 /* Grid Object Constants: */
 GRID_COLOR = "#555555";
 GRID_DENSITY_COLOR = "0, 153, 153"; // has to be in RGB!
-GRID_WHITENESS = "16%";
-GRID_BLACKNESS = "8%";
 GRID_VELOCITY_COLOR = "yellow";
 GRID_TEXT_COLOR = "#00FF00";
 GRID_LINE_WIDTH = 1;
-HUE_WIDTH = 0.9;
 
 
 /* The Grid object:
@@ -31,7 +28,8 @@ function Grid(N, size, nDims) {
     this.N = N;
     this.size = size;
     this.nDims = nDims;
-    this.hueShift = Math.floor(Math.random() * 360)
+    var date = new Date(Date.now());
+    this.hueShift = date.getHours()/12 * 360;//Math.floor(Math.random() * 360)
 
     // compute the length of each cell in each axis
     this.len_cells = new Array();
@@ -202,7 +200,7 @@ function Grid(N, size, nDims) {
                 var dens = this.dens[i][j][1];
                 dens *= 1000;
                 dens = clamp(dens, -HUE_WIDTH, HUE_WIDTH);
-                c = "hsl(" + (dens * 360 + this.hueShift) + ", 95%, 55%)";
+                c = "hsl(" + (dens * HUE_SCALE + this.hueShift) + ", 95%, 55%)";
                 var x = Math.floor(i * w + start_x);
                 var y = Math.floor(j * h + start_y);
 
@@ -253,25 +251,5 @@ function Grid(N, size, nDims) {
             }
         }
         ctx.restore();
-    }
-
-    this.drawGradient = function(ctx, x, y, w, h, c)
-    {
-        var c0 = c[0];
-        var c1 = c[1];
-        var c2 = c[2];
-        var c3 = c[3]
-        /*for (var i=0; i<=w; i++)
-        {
-            var cTop = lerpColor(c0,c1,i/w);
-            var cBottom = lerpColor(c2,c3,i/w);
-            for (var j=0; j<=h; j++)
-            {
-                var c = lerpColor(cTop,cBottom, j/h);
-                fill(c);
-                point(x+i, j+y);
-            }
-        }*/
-
     }
 }
