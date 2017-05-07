@@ -1,8 +1,10 @@
 "use strict";
+document.addEventListener('DOMContentLoaded', init);
+
 var Field = {};
 var viscosity = 0.001;
-var hGridSize = 150;
-var vGridSize = 80;
+var hGridSize = 160;
+var vGridSize = 90;
 var resolution = 12;
 var sim;
 var planes;
@@ -13,46 +15,31 @@ var GRID_BLACKNESS = "8%";
 var HUE_WIDTH = 1.5;
 var HUE_SCALE = 180; //default 360
 
-function setup()
+function init()
 {
-    noStroke();
-    frameRate(10);
-    createCanvas(hGridSize * resolution, vGridSize * resolution);
-    sim = new Simulator(hGridSize, vGridSize, width, height);
+    var w = hGridSize * resolution;
+    var h = vGridSize * resolution;
+    var cC1 = document.getElementById("canvasContainer1");
+    var cC2 = document.getElementById("canvasContainer2");
+    cC1.innerHTML = "<canvas id='fluidCanvas' width=" + w + " height=" + h + ">";
+    cC2.innerHTML = "<canvas id='planeCanvas' width=" + w + " height=" + h + ">";
+    sim = new Simulator(hGridSize-2, vGridSize-2, w+1, h+1);
     planes = new PlaneData();
+
+    window.requestAnimationFrame(update);
 }
 
-function draw()
+function update()
 {
 
     sim.step()
 
+    window.requestAnimationFrame(update);
 }
-
-function windowResized()
-{
-    //resizeCanvas(windowWidth, windowHeight)
-}
-
 
 function getSources()
 {
     var sources = [];
-    if (mouseIsPressed) {
-        var dens = 0;
-        if (mouseButton == LEFT)
-        {
-            dens = 0.1;
-        }
-        else if (mouseButton == RIGHT)
-        {
-            dens = -0.1;
-        }
-        var x = constrain(mouseX, 0, width-1);
-        var y = constrain(mouseY, 0, height-1);
-        var s = new Source(x, y, 0, 0, dens);
-        sources.push(s);
-    }
 
     var planeData = planes.getCurrentPlanes();
     for (var i = 0; i < planeData.length; i++) {

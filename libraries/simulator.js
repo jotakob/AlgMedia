@@ -34,7 +34,7 @@ function Simulator(w, h, cW, cH) {
     this.width = cW
     this.height = cH
     this.solver_iters = 20;
-    this.ctx = document.getElementById("defaultCanvas0").getContext("2d");
+    this.ctx = document.getElementById("fluidCanvas").getContext("2d");
 
     this.timeStep = this.dT;
     this.grid = new Grid([this.grid_cols, this.grid_rows, 1],

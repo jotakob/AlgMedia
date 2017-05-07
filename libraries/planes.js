@@ -95,12 +95,12 @@ function PlaneData()
                 {
                     if (plane.heading != null)
                     {
-                        plane.vX = cos(plane.heading) * VELOCITY_SCALE;
-                        plane.vY = sin(plane.heading) * VELOCITY_SCALE;
+                        plane.vX = Math.cos(plane.heading) * VELOCITY_SCALE;
+                        plane.vY = Math.sin(plane.heading) * VELOCITY_SCALE;
                     }
 
-                    plane.x = Math.floor((plane.long - this.longMin) / (2*AREASIZE) * width);
-                    plane.y = Math.floor((plane.lat - this.latMin) / (2*AREASIZE) * height);
+                    plane.x = Math.floor((plane.long - this.longMin) / (2*AREASIZE) * sim.width);
+                    plane.y = Math.floor((plane.lat - this.latMin) / (2*AREASIZE) * sim.height);
 
 
                     results.push(plane);

@@ -185,14 +185,14 @@ function Grid(N, size, nDims) {
 
     // Render a 2D representation of this Grid. Only works for 2D setup.
     this.render2D = function(ctx) {
-        clear();
-        background("#000000");
+        ctx.fillStyle= "#000000";
+        ctx.fillRect(0,0, sim.width, sim.height)
         ctx.save();
         // draw the densities
         var w = Math.floor(this.len_cells[X_DIM]);
         var h = Math.floor(this.len_cells[Y_DIM]);
-        var start_x = (sim.width - w*(this.N[X_DIM]+2)) / 2;
-        var start_y = (sim.height - h*(this.N[Y_DIM]+2)) / 2;
+        var start_x = 0;
+        var start_y = 0;
         for(var i=0; i<this.N[X_DIM]+2; i++)
         {
             for(var j=0; j<this.N[Y_DIM]+2; j++)
@@ -210,46 +210,6 @@ function Grid(N, size, nDims) {
             }
         }
 
-
-        // if option is enabled, draw the grid
-        if(false) {
-            stroke(GRID_COLOR);
-            ctx.lineWidth = GRID_LINE_WIDTH;
-            // draw the x axis lines
-            for(var i=0; i<this.N[X_DIM]+2+1; i++) {
-                ctx.beginPath();
-                var x = Math.floor(i * w + start_x);
-                ctx.moveTo(x, start_y);
-                ctx.lineTo(x, sim.height - start_y);
-                ctx.stroke();
-            }
-            // draw the y axis lines
-            for(var i=0; i<this.N[Y_DIM]+2+1; i++) {
-                ctx.beginPath();
-                var y = Math.floor(i * h + start_y);
-                ctx.moveTo(start_x, y);
-                ctx.lineTo(sim.width - start_x, y);
-                ctx.stroke();
-            }
-        }
-        // if option is enabled, draw the velocity vectors
-        if(false) {
-            // TODO - fix the renderring here to match the above fixes
-            ctx.strokeStyle = GRID_VELOCITY_COLOR;
-            ctx.lineWidth = GRID_LINE_WIDTH;
-            for(var i=0; i<this.N[X_DIM]+2; i++) {
-                for(var j=0; j<this.N[Y_DIM]+2; j++) {
-                    var x = Math.floor(i * w + start_x);
-                    var y = Math.floor((j+1) * h + start_y);
-                    var vX = Math.ceil(this.vel[X_DIM][i][j][1]*1000);
-                    var vY = Math.ceil(this.vel[Y_DIM][i][j][1]*1000);
-                    ctx.beginPath();
-                    ctx.moveTo(x, y);
-                    ctx.lineTo(x+vX, y+vY);
-                    ctx.stroke();
-                }
-            }
-        }
         ctx.restore();
     }
 }
