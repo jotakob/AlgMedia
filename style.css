@@ -8,15 +8,14 @@ body {
 
 .cC {
     width: 100%;
-    height: 100%
+    height: 100%;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#canvasContainer2 {
+#canvasContainer1 {
     visibility: hidden;
 }

@@ -6,6 +6,8 @@ const HAGENBERG_LAT = 48.3687;
 const HAGENBERG_LONG = 14.5126;
 const VELOCITY_SCALE = 0.1;
 
+var vScale;
+
 function PlaneData()
 {
 
@@ -16,6 +18,7 @@ function PlaneData()
     this.lastCheckTime = 0;
     this.lastResponseTime = 0;
     this.startTime = Math.floor(Date.now() / 1000);
+    vScale = sim.height / sim.width;
 
     this.currentPlanes = [];
 
@@ -24,8 +27,8 @@ function PlaneData()
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
         alert("Geolocation is not supported by this browser. Using Hagenberg");
-        latMin = HAGENBERG_LAT - AREASIZE;
-        latMax = HAGENBERG_LAT + AREASIZE;
+        latMin = HAGENBERG_LAT - AREASIZE * vScale;
+        latMax = HAGENBERG_LAT + AREASIZE * vScale;
         longMin = HAGENBERG_LONG - AREASIZE;
         longMax = HAGENBERG_LONG + AREASIZE;
     }
@@ -33,8 +36,8 @@ function PlaneData()
     function showPosition(position) {
         var lat = position.coords.latitude;
         var long = position.coords.longitude;
-        planes.latMin = lat - AREASIZE;
-        planes.latMax = lat + AREASIZE;
+        planes.latMin = lat - AREASIZE * vScale;
+        planes.latMax = lat + AREASIZE * vScale;
         planes.longMin = long - AREASIZE;
         planes.longMax = long + AREASIZE;
     }
@@ -50,6 +53,7 @@ function PlaneData()
             {
                 var reqTimestamp = Math.floor((this.startTime - 3500) + (timeStamp - this.startTime) * 5);
                 this.requestAllData(reqTimestamp);
+                drawPlanes(this.currentPlanes);
             }
         }
 
@@ -60,20 +64,22 @@ function PlaneData()
     {
         var myReq = new XMLHttpRequest();
 
-        myReq.onreadystatechange = function()
-        {
-            if (this.readyState == this.DONE && this.status == 200)
-            {
-                var response = JSON.parse(this.responseText);
-                planes.lastResponseTime = response.time;
-                planes.analyseResponse(response.states);
-            }
-        }
+        myReq.onreadystatechange = this.dataReceived;
 
         var s = DOMAIN + "?timestamp=" + timestamp;
         myReq.open("GET", s, true);
         myReq.send();
 
+    }
+
+    this.dataReceived = function()
+    {
+        if (this.readyState == this.DONE && this.status == 200)
+        {
+            var response = JSON.parse(this.responseText);
+            planes.lastResponseTime = response.time;
+            planes.analyseResponse(response.states);
+        }
     }
 
     this.analyseResponse = function(states)
@@ -100,7 +106,7 @@ function PlaneData()
                     }
 
                     plane.x = Math.floor((plane.long - this.longMin) / (2*AREASIZE) * sim.width);
-                    plane.y = Math.floor((plane.lat - this.latMin) / (2*AREASIZE) * sim.height);
+                    plane.y = Math.floor((plane.lat - this.latMin) / (2*AREASIZE * vScale) * sim.height);
 
 
                     results.push(plane);
