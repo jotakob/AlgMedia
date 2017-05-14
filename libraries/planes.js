@@ -21,25 +21,28 @@ function PlaneData()
     vScale = sim.height / sim.width;
 
     this.currentPlanes = [];
+    this.airports = [];
 
 
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(readPosition);
     } else {
         alert("Geolocation is not supported by this browser. Using Hagenberg");
-        latMin = HAGENBERG_LAT - AREASIZE * vScale;
-        latMax = HAGENBERG_LAT + AREASIZE * vScale;
-        longMin = HAGENBERG_LONG - AREASIZE;
-        longMax = HAGENBERG_LONG + AREASIZE;
+        this.latMin = HAGENBERG_LAT - AREASIZE * vScale;
+        this.latMax = HAGENBERG_LAT + AREASIZE * vScale;
+        this.longMin = HAGENBERG_LONG - AREASIZE;
+        this.longMax = HAGENBERG_LONG + AREASIZE;
+        this.airports = this.parseAirports(airportCSV);
     }
 
-    function showPosition(position) {
+    function readPosition(position) {
         var lat = position.coords.latitude;
         var long = position.coords.longitude;
         planes.latMin = lat - AREASIZE * vScale;
         planes.latMax = lat + AREASIZE * vScale;
         planes.longMin = long - AREASIZE;
         planes.longMax = long + AREASIZE;
+        planes.airports = planes.parseAirports(airportCSV);
     }
 
 
@@ -117,4 +120,12 @@ function PlaneData()
         this.currentPlanes = results;
     }
 
+    this.parseAirports = function(airportCSV)
+    {
+        var allAirports = JSON.parse(airportCSV);
+        for (var i = 0; i < allAirports.length; i++) {
+            var apData = allAirports[i];
+            
+        }
+    }
 }
