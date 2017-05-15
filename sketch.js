@@ -10,7 +10,10 @@ var sim;
 var planes;
 var lastPlanePositions = {};
 var planeCanvas;
+var mode = 0;
+var showAirports = false;
 var DENSITY_SCALE = 0.1;
+var cC1, cC2;
 
 var GRID_WHITENESS = "16%";
 var GRID_BLACKNESS = "8%";
@@ -21,12 +24,11 @@ function init()
 {
     var w = hGridSize * resolution;
     var h = vGridSize * resolution;
-    var cC1 = document.getElementById("canvasContainer1");
-    var cC2 = document.getElementById("canvasContainer2");
+    cC1 = document.getElementById("canvasContainer1");
+    cC2 = document.getElementById("canvasContainer2");
     cC1.innerHTML = "<canvas id='fluidCanvas' width=" + w + " height=" + h + ">";
     cC2.innerHTML = "<canvas id='planeCanvas' width=" + w + " height=" + h + ">";
     planeCanvas = document.getElementById("planeCanvas").getContext("2d");
-    drawAirports();
     sim = new Simulator(hGridSize-2, vGridSize-2, w+1, h+1);
     planes = new PlaneData();
 
@@ -39,6 +41,55 @@ function update()
     sim.step()
 
     window.requestAnimationFrame(update);
+}
+
+function modeButtonClick()
+{
+    var bgc;
+    mode++;
+    console.log("New Mode: " + mode)
+    switch (mode) {
+        case 0:
+            cC1.style.display = 'block';
+            cC2.style.display = 'none';
+            showAirports = false;
+            bgc = "#ee2222";
+            break;
+        case 1:
+            cC1.style.display = 'block';
+            cC2.style.display = 'block';
+            showAirports = false;
+            bgc = "#670035";
+            break;
+        case 2:
+            cC1.style.display = 'block';
+            cC2.style.display = 'block';
+            showAirports = true;
+            bgc = "#f6bf1a";
+            break;
+        case 3:
+            cC1.style.display = 'none';
+            cC2.style.display = 'block';
+            showAirports = true;
+            bgc = "#289915";
+            break;
+        case 4:
+            cC1.style.display = 'none';
+            cC2.style.display = 'block';
+            showAirports = false;
+            bgc = "#517e8c";
+            break;
+        default:
+            mode = 0;
+            cC1.style.display = 'block';
+            cC2.style.display = 'none';
+            showAirports = false;
+            bgc = "#ee2222";
+            break;
+
+    }
+    var btn = document.getElementById("modeButton");
+    btn.style.backgroundColor = bgc;
 }
 
 function getSources()
@@ -64,16 +115,41 @@ function getSources()
     return sources;
 }
 
-function drawAirports()
+function drawAirports(ctx)
 {
+    ctx.font = "10px 'Lucida Console'";
+    for (var key in planes.airports)
+    {
+        if (!planes.airports.hasOwnProperty(key)) {continue;}
+
+        var airport = planes.airports[key];
+
+        for (var i = 0; i < airport.runways.length; i++) {
+            var rW = airport.runways[i];
+            ctx.beginPath();
+            ctx.strokeStyle="#FFFFFF";
+            var long1 = planes.scaleLong(rW.x1);
+            var lat1 = planes.scaleLat(rW.y1);
+            var long2 = planes.scaleLong(rW.x2);
+            var lat2 = planes.scaleLat(rW.y2);
+            ctx.moveTo(long1, lat1);
+            ctx.lineTo(long2, lat2);
+            ctx.stroke();
+        }
+
+        ctx.fillText(airport.code, planes.scaleLong(airport.long), planes.scaleLat(airport.lat));
+    }
 
 }
 
 function drawPlanes(planeData)
 {
-    console.log("Planes!")
     var ctx = planeCanvas;
     ctx.clearRect(0, 0, sim.width, sim.height);
+    if (showAirports)
+    {
+        drawAirports(ctx);
+    }
     for (var i = 0; i < planeData.length; i++)
     {
 

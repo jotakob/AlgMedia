@@ -21,7 +21,7 @@ function PlaneData()
     vScale = sim.height / sim.width;
 
     this.currentPlanes = [];
-    this.airports = [];
+    this.airports = {};
 
 
     if (navigator.geolocation) {
@@ -32,7 +32,7 @@ function PlaneData()
         this.latMax = HAGENBERG_LAT + AREASIZE * vScale;
         this.longMin = HAGENBERG_LONG - AREASIZE;
         this.longMax = HAGENBERG_LONG + AREASIZE;
-        this.airports = this.parseAirports(airportCSV);
+        this.loadAirports();
     }
 
     function readPosition(position) {
@@ -42,7 +42,7 @@ function PlaneData()
         planes.latMax = lat + AREASIZE * vScale;
         planes.longMin = long - AREASIZE;
         planes.longMax = long + AREASIZE;
-        planes.airports = planes.parseAirports(airportCSV);
+        planes.loadAirports();
     }
 
 
@@ -67,7 +67,7 @@ function PlaneData()
     {
         var myReq = new XMLHttpRequest();
 
-        myReq.onreadystatechange = this.dataReceived;
+        myReq.onreadystatechange = this.planeDataReceived;
 
         var s = DOMAIN + "?timestamp=" + timestamp;
         myReq.open("GET", s, true);
@@ -75,7 +75,7 @@ function PlaneData()
 
     }
 
-    this.dataReceived = function()
+    this.planeDataReceived = function()
     {
         if (this.readyState == this.DONE && this.status == 200)
         {
@@ -108,8 +108,8 @@ function PlaneData()
                         plane.vY = Math.sin(plane.heading) * VELOCITY_SCALE;
                     }
 
-                    plane.x = Math.floor((plane.long - this.longMin) / (2*AREASIZE) * sim.width);
-                    plane.y = Math.floor((plane.lat - this.latMin) / (2*AREASIZE * vScale) * sim.height);
+                    plane.x = this.scaleLong(plane.long);
+                    plane.y = this.scaleLat(plane.lat);
 
 
                     results.push(plane);
@@ -120,12 +120,34 @@ function PlaneData()
         this.currentPlanes = results;
     }
 
-    this.parseAirports = function(airportCSV)
+    this.loadAirports = function()
     {
-        var allAirports = JSON.parse(airportCSV);
-        for (var i = 0; i < allAirports.length; i++) {
-            var apData = allAirports[i];
-            
+        var myReq = new XMLHttpRequest();
+
+        myReq.onreadystatechange = this.airportDataReceived;
+
+        var s = "getAirports.php?latMin=" + this.latMin + "&latMax=" + this.latMax  + "&longMin=" + this.longMin  + "&longMax=" + this.longMax ;
+        console.log(s);
+        myReq.open("GET", s, true);
+        myReq.send();
+    }
+
+    this.airportDataReceived = function()
+    {
+        if (this.readyState == this.DONE && this.status == 200)
+        {
+            var response = JSON.parse(this.responseText);
+            planes.airports = response;
         }
+    }
+
+    this.scaleLong = function(long)
+    {
+        return Math.floor(((long - this.longMin) / (this.longMax - this.longMin)) * sim.width);
+    }
+
+    this.scaleLat = function(lat)
+    {
+        return Math.floor( (1 - ( (lat - this.latMin) / (this.latMax - this.latMin) ) ) * sim.height );
     }
 }
