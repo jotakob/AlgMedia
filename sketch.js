@@ -14,11 +14,13 @@ var mode = 0;
 var showAirports = false;
 var DENSITY_SCALE = 0.1;
 var cC1, cC2;
+var showSmallAirports = true;
 
 var GRID_WHITENESS = "16%";
 var GRID_BLACKNESS = "8%";
 var HUE_WIDTH = 1.5;
 var HUE_SCALE = 180; //default 360
+var TRAIL_LENGTH = 200;
 
 function init()
 {
@@ -124,20 +126,24 @@ function drawAirports(ctx)
 
         var airport = planes.airports[key];
 
-        for (var i = 0; i < airport.runways.length; i++) {
-            var rW = airport.runways[i];
-            ctx.beginPath();
-            ctx.strokeStyle="#FFFFFF";
-            var long1 = planes.scaleLong(rW.x1);
-            var lat1 = planes.scaleLat(rW.y1);
-            var long2 = planes.scaleLong(rW.x2);
-            var lat2 = planes.scaleLat(rW.y2);
-            ctx.moveTo(long1, lat1);
-            ctx.lineTo(long2, lat2);
-            ctx.stroke();
-        }
+        if (showSmallAirports || airport.type != "small_airport")
+        {
+            for (var i = 0; i < airport.runways.length; i++) {
+                var rW = airport.runways[i];
+                ctx.beginPath();
+                ctx.strokeStyle="#BBBBBB";
+                ctx.lineWidth = 3;
+                var long1 = planes.scaleLong(rW.x1);
+                var lat1 = planes.scaleLat(rW.y1);
+                var long2 = planes.scaleLong(rW.x2);
+                var lat2 = planes.scaleLat(rW.y2);
+                ctx.moveTo(long1, lat1);
+                ctx.lineTo(long2, lat2);
+                ctx.stroke();
+            }
 
-        ctx.fillText(airport.code, planes.scaleLong(airport.long), planes.scaleLat(airport.lat));
+            ctx.fillText(airport.code, planes.scaleLong(airport.long), planes.scaleLat(airport.lat) -2);
+        }
     }
 
 }
@@ -175,7 +181,8 @@ function drawPlanes(planeData)
                 continue;
             }
             ctx.beginPath();
-            ctx.strokeStyle = "rgba(255,255,255," + (1- ((pos.length - i) * 0.1)) + ")";
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = "rgba(255,255,255," + (1- ((pos.length - i) * (1/TRAIL_LENGTH) )) + ")";
             ctx.moveTo(pos[i-1][0], pos[i-1][1]);
             ctx.lineTo(pos[i][0], pos[i][1]);
             ctx.stroke();

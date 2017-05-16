@@ -1,16 +1,7 @@
 <?php
 
-/*if (!isset($_GET["latMin"]) || !isset($_GET["latMax"]) || !isset($_GET["longMin"]) || !!isset($_GET["longMax"]))
+if (isset($_GET["latMin"]) && isset($_GET["latMax"]) && isset($_GET["longMin"]) && isset($_GET["longMax"]))
 {
-    $airportData = array_map('str_getcsv', file('airports.csv'));
-    array_shift($airportData);
-    echo(json_encode($airportData));
-}
-else*/
-{
-    /*$airportData = array_map('str_getcsv', file('airports.csv'));
-    array_shift($airportData);*/
-
     $latMin = $_GET["latMin"];
     $latMax = $_GET["latMax"];
     $longMin = $_GET["longMin"];
@@ -27,9 +18,10 @@ else*/
             if ($lat > $latMin && $lat < $latMax && $long > $longMin && $long < $longMax && $line[2] != "heliport")
             {
                 $airport = [];
-                $airport['lat'] = $lat;
-                $airport['long'] = $long;
+                $airport['lat'] = (float)$lat;
+                $airport['long'] = (float)$long;
                 $airport['code'] = ( ($line[13] != '') ? $line[13] : $line[12]);
+                $airport['type'] = $line[2];
                 $airport['runways'] = [];
                 $airports[$line[0]] = $airport;
             }
@@ -40,21 +32,6 @@ else*/
         // error opening the file.
     }
 
-    /*foreach ($airportData as $line)
-    {
-        $lat = $line[4];
-        $long = $Line[5];
-        if ($lat > $latMin && $lat < $latMax && $long > $minLong && $long < $maxLong)
-        {
-            $airport = [];
-            $airport['lat'] = $lat;
-            $airport['long'] = $long;
-            $airport['code'] = ( ($line[13] != '') ? $line[13] : $line[14]);
-            $airport['runways'] = [];
-            $airports[$line[0]] = $airport;
-        }
-    }*/
-
     $runwayData = array_map('str_getcsv', file('runways.csv'));
     array_shift($runwayData);
 
@@ -64,10 +41,10 @@ else*/
         if (array_key_exists($id, $airports))
         {
             $runway = [];
-            $runway['x1'] = $line[9];
-            $runway['y1'] = $line[10];
-            $runway['x2'] = $line[15];
-            $runway['y2'] = $line[16];
+            $runway['y1'] = (float)$line[9];
+            $runway['x1'] = (float)$line[10];
+            $runway['y2'] = (float)$line[15];
+            $runway['x2'] = (float)$line[16];
 
             array_push($airports[$id]['runways'], $runway);
         }
@@ -76,5 +53,12 @@ else*/
 	$out = json_encode($airports);
 	echo $out;
 }
+else
+{
+    $airportData = array_map('str_getcsv', file('airports.csv'));
+    array_shift($airportData);
+    echo(json_encode($airportData));
+}
 
- ?>
+
+?>
