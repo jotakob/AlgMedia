@@ -32,22 +32,26 @@ if (isset($_GET["latMin"]) && isset($_GET["latMax"]) && isset($_GET["longMin"]) 
         // error opening the file.
     }
 
-    $runwayData = array_map('str_getcsv', file('runways.csv'));
-    array_shift($runwayData);
-
-    foreach ($runwayData as $line)
-    {
-        $id = $line[1];
-        if (array_key_exists($id, $airports))
+    $handle = fopen("runways.csv", "r");
+    if ($handle) {
+        while (($csvLine = fgets($handle)) !== false)
         {
-            $runway = [];
-            $runway['y1'] = (float)$line[9];
-            $runway['x1'] = (float)$line[10];
-            $runway['y2'] = (float)$line[15];
-            $runway['x2'] = (float)$line[16];
+            $line = str_getcsv($csvLine);
+            $id = $line[1];
+            if (array_key_exists($id, $airports))
+            {
+                $runway = [];
+                $runway['y1'] = (float)$line[9];
+                $runway['x1'] = (float)$line[10];
+                $runway['y2'] = (float)$line[15];
+                $runway['x2'] = (float)$line[16];
 
-            array_push($airports[$id]['runways'], $runway);
+                array_push($airports[$id]['runways'], $runway);
+            }
         }
+        fclose($handle);
+    } else {
+        // error opening the file.
     }
 
 	$out = json_encode($airports);
@@ -55,6 +59,7 @@ if (isset($_GET["latMin"]) && isset($_GET["latMax"]) && isset($_GET["longMin"]) 
 }
 else
 {
+    echo("Error with the GET-Parameters");
     $airportData = array_map('str_getcsv', file('airports.csv'));
     array_shift($airportData);
     echo(json_encode($airportData));
