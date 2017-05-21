@@ -61,25 +61,13 @@ function modeButtonClick()
             cC1.style.display = 'block';
             cC2.style.display = 'block';
             showAirports = false;
-            bgc = "#670035";
-            break;
-        case 2:
-            cC1.style.display = 'block';
-            cC2.style.display = 'block';
-            showAirports = true;
             bgc = "#f6bf1a";
             break;
-        case 3:
+        case 2:
             cC1.style.display = 'none';
             cC2.style.display = 'block';
             showAirports = true;
             bgc = "#289915";
-            break;
-        case 4:
-            cC1.style.display = 'none';
-            cC2.style.display = 'block';
-            showAirports = false;
-            bgc = "#517e8c";
             break;
         default:
             mode = 0;
